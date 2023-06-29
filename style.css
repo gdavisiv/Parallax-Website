@@ -51,3 +51,47 @@ header ul a {
     font-size: 1.05rem;
     padding: 0 3rem;
 }
+
+.menu {
+    padding-left: 1.5rem;
+}
+
+.menu a{
+    padding: 0;
+    width: 37px;
+    height: 37px;
+    display: flex;
+    border-radius: 50%;
+    background-color: rgba(115, 115, 115, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    justify-content: center;
+    align-items: center;
+}
+
+.menu .bar{
+    position: relative;
+    width: 52%;
+    height: 1.3px;
+    background-color: #fff;
+    border-radius: 2px;
+}
+
+.menu .bar::before,
+.menu .bar::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    width: 70%;
+    height: 100%;
+    background-color: inherit;
+    border-radius: 2px;
+}
+
+.menu .bar::before {
+    top: -4.5px;
+}
+
+.menu .bar::after{
+    top: 4.5px;
+}
