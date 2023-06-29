@@ -43,7 +43,7 @@ header ul {
 
 header ul a {
     text-decoration: none;
-    color: #fff;
+    color: #7700ff;
     padding: 0 1.5rem;
     text-transform: uppercase;
     font-weight: 300;
@@ -65,7 +65,7 @@ header ul a {
     height: 37px;
     display: flex;
     border-radius: 50%;
-    background-color: rgba(115, 115, 115, 0.7);
+    background-color: rgba(132, 0, 255, 0.7);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     justify-content: center;
@@ -180,5 +180,23 @@ main {
 }
 
 .text {
+    position: absolute;
+    z-index: 9;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-transform: uppercase; 
+    color: #fff;   
+}
 
+.text h2{
+    font-weight: 600;
+    font-size: 3.5rem;
+}
+
+.text h1{
+    font-weight: 50;
+    font-size: 2.5rem;
+    line-height: 0.88;
 }
