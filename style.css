@@ -112,7 +112,8 @@ main {
 }
 
 .parallax{
-    pointer-events: none;    
+    pointer-events: none;
+    transition: 0.45s cubic-bezier(0.2, 0.49, 0.32, 0.99);
 }
 
 .bg-img{
@@ -252,7 +253,7 @@ main {
 .fog-2{
     position: absolute;
     z-index: 16;
-    width: 500px;
+    width: 2000px;
     top: calc(50% + 330px);
     left: calc(50% - 100px);
 }
