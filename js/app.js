@@ -10,7 +10,10 @@ window.addEventListener("mousemove", (e) => {
     parallax_el.forEach((el) => {
         let speedx = el.dataset.speedx;
         let speedy = el.dataset.speedy;
-        el.style.transform = `translateX(calc(-50% + ${-xValue * speedx}px)) translateY(calc(-50% + ${yValue * speedy}px))`;
+
+        let zValue = 100;
+
+        el.style.transform = `translateX(calc(-50% + ${-xValue * speedx}px)) translateY(calc(-50% + ${yValue * speedy}px)) translateZ(px)`;
     });
     console.log(xValue, yValue);
 });
