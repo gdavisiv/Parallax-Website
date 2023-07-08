@@ -22,7 +22,7 @@ window.addEventListener("mousemove", (e) => {
             (e.clientX - parseFloat(getComputedStyle(el).left)) * isInLeft * 0.1;
         
 
-        el.style.transform = `translateX(calc(-50% + ${-xValue * speedx}px)) translateY(calc(-50% + ${yValue * speedy}px)) perspective(2300px) translateZ(${zValue * speedz}px)`;
+        el.style.transform = `perspective(2300px) rotateY(${rotateDegree}deg) translateX(calc(-50% + ${-xValue * speedx}px)) translateY(calc(-50% + ${yValue * speedy}px))translateZ(${zValue * speedz}px)`;
     });
     console.log(xValue, yValue);
 });
