@@ -32,3 +32,12 @@ window.addEventListener("mousemove", (e) => {
 
     update(e.clientX);
 });
+
+
+/* GSAP Animation Code */
+
+let timeline = gsap.timeline();
+
+timeline.from(".bg-img", {
+    top: "0px",
+});
