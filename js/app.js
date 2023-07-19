@@ -33,7 +33,8 @@ window.addEventListener("mousemove", (e) => {
     update(e.clientX);
 });
 
-
+/* GSAP Animaiton Code */
+/* 
 let timeline = gsap.timeline();
 
 parallax_el.forEach((el) => {
@@ -46,3 +47,4 @@ parallax_el.forEach((el) => {
         "1"
     );
 });
+ */
